@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="/horizon/horizon.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+  </head>
+  <body>
+
+  <div class="main-grid ui grid">
+
+    <div class="row">
+      <div class="twelve wide column left align">
+
+        <div class="ui form">
+          <div class="field">
+            <label>Gist title</label>
+            <input type="text">
+          </div>
+
+          <div class="field">
+            <label>Short Text</label>
+            <textarea rows="30"></textarea>
+          </div>
+
+          <div class="ui submit button">Submit</div>
+
+        </div>
+
+      </div>
+      <div class="four wide column">
+        <span class="label">Gists</span>
+        <div id="gistsLists">
+          <ul>
+            <li v-for="gist in gists">
+              {{gist.title}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </body>
+  <script src="gists.js"></script>
+
+</html>
