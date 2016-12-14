@@ -11,40 +11,26 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
   </head>
   <body>
 
-  <div class="main-grid ui grid">
+  <div class="main-grid ui grid" id="mainApp">
 
     <div class="row">
       <div class="twelve wide column left align">
 
-        <div class="ui form">
-          <div class="field">
-            <label>Gist title</label>
-            <input type="text">
-          </div>
-
-          <div class="field">
-            <label>Short Text</label>
-            <textarea rows="30"></textarea>
-          </div>
-
-          <div class="ui submit button">Submit</div>
-
-        </div>
+      <router-view></router-view>
 
       </div>
       <div class="four wide column">
         <span class="label">Gists</span>
-        <div id="gistsLists">
           <ul>
             <li v-for="gist in gists">
-              {{gist.title}}
+              <router-link :to='gist.link'>{{gist.title}}</router-link>
             </li>
           </ul>
-        </div>
       </div>
     </div>
 
