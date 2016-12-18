@@ -20,11 +20,11 @@ const Main = { template:
 };
 
 const Gist = {
-  template: '<div>A gist! {{ foo }}</div>',
+  template: '<div>A gist! {{ $route.params.foo }}</div>',
   created () {
     // fetch the data when the view is created and the data is
     // already being observed
-    this.fetchData()
+    this.fetchData();
   },
   watch: {
     // call again the method if the route changes
@@ -32,12 +32,12 @@ const Gist = {
   },
   methods: {
     fetchData () {
-      this.foo = 'foo';
       gists.find(this.$route.params.id).fetch().subscribe(
         (msg) => {
-          this.foo = 'a';
+          this.$route.params.foo = 'a';
         }
       );
+
     }
   }
 };
