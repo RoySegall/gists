@@ -20,7 +20,12 @@ const Main = { template:
 };
 
 const Gist = {
-  template: '<div>{{ gistInfo.code }}</div>',
+  template:
+  '<div>' +
+    '<router-link to="/">Go back</router-link>' +
+    '<h1>{{ gistInfo.title }}</h1>' +
+    '<div class="element">{{ gistInfo.code }}</div>' +
+  '</div>',
   created () {
     // fetch the data when the view is created and the data is
     // already being observed

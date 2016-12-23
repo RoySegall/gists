@@ -3,7 +3,6 @@ body {
   background: #EBF5EE;
 }
 
-
 .main-grid {
   background: #14BDEB;
   width: 90%;
@@ -39,4 +38,24 @@ body {
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.router-link-active {
+  color: white;
+}
+
+.router-link-active:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.element {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fafafa;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  color: black;
 }

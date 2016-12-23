@@ -28,7 +28,7 @@
         <span class="label">Gists</span>
           <ul>
             <li v-for="gist in gists">
-              <router-link :to='gist.link'>{{gist.title}}</router-link>
+              <router-link :to='gist.link' class="router-link-active">{{gist.title}}</router-link>
             </li>
           </ul>
       </div>
