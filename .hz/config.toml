@@ -38,8 +38,8 @@ project_name = "gists"
 # 'auto_create_collection' creates a collection when one is needed but does not exist
 # 'auto_create_index' creates an index when one is needed but does not exist
 #------------------------------------------------------------------------------
-# auto_create_collection = false
-# auto_create_index = false
+auto_create_collection = false
+auto_create_index = false
 
 
 ###############################################################################
