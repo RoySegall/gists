@@ -16,22 +16,22 @@
   </head>
   <body>
 
-  <div class="main-grid ui grid" id="mainApp">
+    <div class="main-grid ui grid" id="mainApp">
 
-    <div class="row">
-      <div class="twelve wide column left align">
+      <div class="row">
+        <div class="twelve wide column left align">
 
-      <router-view></router-view>
+        <router-view></router-view>
 
-      </div>
-      <div class="four wide column">
-        <span class="label">Gists</span>
-          <ul>
-            <li v-for="gist in gists">
-              <router-link :to='gist.link' class="router-link-active">{{gist.title}}</router-link>
-            </li>
-          </ul>
-      </div>
+        </div>
+        <div class="four wide column">
+          <span class="label">Gists</span>
+            <ul>
+              <li v-for="gist in gists">
+                <router-link :to='gist.link' class="router-link-active">{{gist.title}}</router-link>
+              </li>
+            </ul>
+        </div>
     </div>
 
   </div>

@@ -1,1 +1,4 @@
+rethinkdb_data
+**/*.log
+.hz/secrets.toml
 .idea

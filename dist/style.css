@@ -54,8 +54,17 @@ body {
   margin-top: 20px;
   background-color: #fafafa;
   font-family: 'Ubuntu', sans-serif;
+  width: 100%;
 }
 
 h1 {
   color: black;
+}
+
+.ui.form input[type=text].error,
+.ui.form textarea.error {
+  background: #f1e2e3 !important;
+  border-color: #E0B4B4 !important;
+  color: #9F3A38 !important;
+  box-shadow: none !important;
 }
