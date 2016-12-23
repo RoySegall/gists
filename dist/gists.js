@@ -17,7 +17,7 @@ const Main = {
 
         + '<div v-if="success">'
           + '<div class="ui positive message">'
-            + '<div class="header">You got it dud!</div>'
+            + '<div class="header">You got it dude!</div>'
             + '<p>You created a new gist. You are not excited? <router-link :to="new_gist_link">Go and watch it!</></p>'
           + '</div>'
         + '</div>'
